@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function myfirstfun(name = "adam") {
+            x = "hey this is" + name + "first function <br>"
+            return x
+        }
+        document.write(myfirstfun())
+        function addition(num1, num2) {
+            result = num1 + num2
+            x = num1 - num2
+            return `[${result}][${x}]<br>`
+        }
+        function muti(number1, number2) {
+            result = number1 * number2
+            y = number1 / number2
+            return `[${result}][${y}]<br>`
+        }
+        document.write(addition(5, 7))
+        document.write(muti(100, 25))
+
+        let kisor = (nu1, nu2) => {
+            result = nu1 ** nu2
+            return result
+        }
+        document.write(kisor(2, 5) + "<br>")
+
+        function sun(num) {
+            hero = Math.sqrt(num)
+            return hero
+        }
+        document.write(sun(100))
+        /* let moon = parseInt(prompt("entr number"))
+         Math.sqrt(moon)
+         document.write(moon)*/
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>exercise of presentation 10</title>
+</head>
+<body>
+    <script>
+        const maxCustomers = 12
+        let currentCustomersInResturant = 0
+        const newMaxCustomers = 20
+        function customers(number) {
+            if (currentCustomersInResturant + number <= maxCustomers) {
+                currentCustomersInResturant += number
+                document.write (`${number} new customers <br>`)
+            }
+            else if (currentCustomersInResturant + number <= newMaxCustomers) {
+                currentCustomersInResturant += number
+                document.write (`${number} new customers <br>`)
+            }
+            else {
+                document.write (`Not enough seats<br>`)
+            }
+            
+        }
+        document.write(`amount of custmer ${currentCustomersInResturant}<br>`)
+        customers(4)
+        document.write(`amount of custmer ${currentCustomersInResturant}<br>`)
+        customers(9)
+        document.write(`amount of custmer ${currentCustomersInResturant}<br>`)
+        customers(2)
+        document.write(`amount of custmer ${currentCustomersInResturant}<br>`)
+        customers(6)
+        document.write(`amount of custmer ${currentCustomersInResturant}<br>`)
+
+    </script>
+    
+</body>
+</html>

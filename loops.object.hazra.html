@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Loops and Objects hazara</title>
+</head>
+
+<body>
+    <script>
+        const matrix = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 3]]
+
+        const matrix_3 = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]]
+
+        const matrix_1 = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]]
+
+        const obed = {
+            first: matrix,
+            second: matrix_3,
+            third: matrix_1
+        }
+        document.write(JSON.stringify(obed) + "<br>" )
+
+        function helo(obed) {
+            //document.write(obed.second)
+            for (const key in obed.second) {
+                document.write(obed.second)
+            }
+        }
+        helo(obed)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Test Exercise</title>
+</head>
+
+<body>
+    <script>
+        document.write(`Exercise 1: <br>`)
+        const ex_1 = [1, 2, 3, 4]
+        const num = ex_1.map(n => n * 3)
+        document.write(`[${ex_1}]<br>[${num}]<br><br>`)
+
+        document.write(`Exercise 2: <br>`)
+        const ex_2 = [3, 7, 11, 9]
+        const greater = ex_2.findIndex(n => n > 10)
+        document.write(`[${ex_2}]<br>[${greater}]<br><br>`)
+
+        document.write(`Exercise 3: <br>`)
+        const modal_3 = [2, 4, 6, 8]
+        const modal = modal_3.every(n => n % 3 == 0)
+        document.write(`[${modal_3}]<br>[${modal}]<br><br>`)
+
+        document.write(`Exercise 4: <br>`)
+        const at_least = [1, 3, 5, 15]
+        const least_10 = at_least.some(n => n > 10)
+        document.write(`[${at_least}]<br>[${least_10}]<br><br>`)
+
+        document.write(`Exercise 5: <br>`)
+        const exer5 = ["apple", 2, 5, "home"]
+        const str = exer5.filter(s => typeof s === "string")
+        document.write(`[${exer5}]<br>[${str}]<br><br>`)
+
+        document.write(`Exercise 6: <br>`)
+        const ex_6 = [8, 6, 4, 3]
+        const number_5 = ex_6.find(n => typeof n === "number" && n > 5)
+        document.write(`[${ex_6}]<br>[${number_5}]<br><br>`)
+
+        document.write(`Exercise 7: <br>`)
+        const ex_7 = [4, 3, 2, 1,]
+        const multi_2 = ex_7.map(n => n * 2)
+        document.write(`[${ex_7}]<br>[${multi_2}]<br><br>`)
+
+        document.write(`Exercise 8: <br>`)
+        const ex_8 = [7, 5, 3, 1,]
+        const less_10 = ex_8.every(n => n < 10)
+        document.write(`[${ex_8}]<br>[${less_10}]<br><br>`)
+
+        document.write(`Exercise 9: <br>`)
+        const ex_9 = [6, 5, 4, 3, 2, 1]
+        const modal_2 = ex_9.filter(n => n % 2 == 0)
+        document.write(`[${ex_9}]<br>[${modal_2}]<br><br>`)
+
+        document.write(`Exercise 10: <br>`)
+        const ex_10 = ["apple", "mango", "kiwi"]
+        const join = ex_10.map(n => n + "-extended")
+        document.write(`[${ex_10}]<br>[${join}]<br><br>`)
+
+        document.write(`Exercise 11: <br>`)
+        const ex_11 = ["hello", "world", "programming", "computer"]
+        const find_i = ex_11.findIndex(n => n.length > 5)
+        document.write(`[${ex_11}]<br>[${find_i}]<br><br>`)
+
+        document.write(`Exercise 12: <br>`)
+        const ex_12 = ["cat", "dog", "elephant", "fox"]
+        const find_3 = ex_12.every(n => n.length >= 3)
+        document.write(`[${ex_12}]<br>[${find_3}]<br><br>`)
+
+        document.write(`Exercise 13: <br>`)
+        const ex_13 = ["apple", "banna", "cherry", "date"]
+        const find_string = ex_13.some(s => s.includes("a"))
+        document.write(`[${ex_13}]<br>[${find_string}]<br><br>`)
+
+        
+        document.write(`Exercise 14: <br>`)
+        const ex_14 = ["apple", "banna", "cherry", "orange"]
+        const find_e = ex_14.filter(s => s.endsWith("e"))
+        document.write(`[${ex_14}]<br>[${find_e}]<br><br>`)
+
+          
+        document.write(`Exercise 15: <br>`)
+        const ex_15 = ["apple", "banna", "cherry", "orange"]
+        const find_b = ex_14.find(s => s.startsWith("b"))
+        document.write(`[${ex_15}]<br>[${find_b}]<br><br>`)
+    </script>
+
+</body>
+
+</html>

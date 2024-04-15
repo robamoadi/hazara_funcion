@@ -5,8 +5,26 @@
 </head>
 <body>
     <script>
-        const maxCustomers = 12
-        let currentCustomersInResturant = 0
+        let table = 3
+        const maxCustomers = 4
+
+        function customers(num) {
+            if (num <= maxCustomers) {
+                table --
+                document.write(`seated <br>`)
+            }
+            else {
+                document.write(`i cant accept you <br>`)
+            }
+        }
+        customers(5)
+        customers(3)
+        customers(4)
+        customers(2)
+        customers(1)
+
+        
+        /*let currentCustomersInResturant = 0
         const newMaxCustomers = 20
         function customers(number) {
             if (currentCustomersInResturant + number <= maxCustomers) {
@@ -30,8 +48,18 @@
         customers(2)
         document.write(`amount of custmer ${currentCustomersInResturant}<br>`)
         customers(6)
-        document.write(`amount of custmer ${currentCustomersInResturant}<br>`)
+        document.write(`amount of custmer ${currentCustomersInResturant}<br>`)*/
 
+        arr = [1, 5 , 3]
+        //document.write(arr)
+        arr.forEach((e) => {
+         document.write(e *10
+         +"<br>");
+        });
+        const a = [1,2,3,4]
+        const b = ["roba" , "moadi"]
+        const y = [...a , ...b]
+        document.write(`[${y}]`)
     </script>
     
 </body>
